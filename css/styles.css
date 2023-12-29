@@ -14,12 +14,23 @@
 }
 
 /* Global styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
 body {
   font-family: var(--text-font-family);
 }
 
 a {
   text-decoration: none;
+  display: block;
 }
 
 ul {
@@ -27,6 +38,11 @@ ul {
 }
 
 /* Classes */
+.hero {
+  width: 1280px;
+  height: 680px;
+}
+
 .social-media-link {
   color: var(--black-text-color);
   font-size: 11px;
@@ -80,7 +96,9 @@ ul {
 
 .book-service-button {
   background: none;
-  border-color: var(--brand-color);
+  border-radius: 25px;
+  border: 1px solid var(--brand-color);
+  padding: 12px 26px 12px 26px;
 
   font-size: 12px;
   font-style: normal;
@@ -103,7 +121,8 @@ ul {
 
 .book-service-button:hover,
 .book-service-button:focus {
-  color: var(--brand-color);
+  color: var(--white-text-color);
+  background-color: var(--brand-color);
 }
 
 .subtitle {
@@ -123,11 +142,16 @@ ul {
   color: var(--black-text-color);
 }
 
+/* Hero section */
+
+/* header */
+.header {
+}
+
 .hero-header {
   font-family: var(--header-font-family);
   font-size: 72px;
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
   letter-spacing: 3.6px;
 
@@ -138,7 +162,6 @@ ul {
   font-family: var(--header-font-family);
   font-size: 42px;
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
   letter-spacing: 2.1px;
 }
@@ -170,6 +193,10 @@ ul {
   color: var(--white-text-color);
 }
 
+/* About section */
+.about {
+}
+
 .about-content-1 {
   color: var(--content-color);
   font-size: 18px;
@@ -182,4 +209,34 @@ ul {
   font-size: 14px;
   line-height: 26px; /* 185.714% */
   letter-spacing: 0.28px;
+}
+
+/* Services and prices section */
+/* TODO replace image background */
+.services-and-prices {
+  background-color: var(--black-text-color);
+  color: var(--white-text-color);
+}
+
+/* Why us section */
+.why-us {
+}
+
+/* Our barbers section */
+.our-barbers {
+}
+
+/* Portfolio section */
+.portfolio {
+}
+
+/* Contacts section */
+/* TODO replace image background */
+.contacts {
+  background-color: var(--black-text-color);
+  color: var(--white-text-color);
+}
+
+/* Footer section */
+.footer {
 }
