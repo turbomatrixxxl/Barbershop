@@ -1,0 +1,22 @@
+/* Contacts section */
+/* TODO replace image background */
+.contacts {
+  background-color: var(--black-text-color);
+  color: var(--white-text-color);
+  height: 644px;
+  padding: 130px 105px 130px 100px;
+}
+
+.contacts-address-icon {
+  /* fill: #9da4bd; */
+  stroke: #9da4bd;
+  fill-opacity: 0;
+}
+
+.contacts-address {
+  color: #9da4bd;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 166.667%;
+  letter-spacing: 0.36px;
+}

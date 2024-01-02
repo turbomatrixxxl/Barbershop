@@ -39,6 +39,7 @@ ul {
 }
 
 /* Classes */
+
 .container {
   width: 1280px;
   margin: 30px auto;
@@ -157,6 +158,15 @@ ul {
 .subtitle-container {
   display: flex;
   gap: 20px;
+  align-items: center;
+}
+
+.divider-light {
+  fill: var(--gray-color);
+}
+
+.divider-dark {
+  fill: var(--black-text-color);
 }
 
 .subtitle {
