@@ -1,0 +1,79 @@
+/* HERO SECTION */
+.hero {
+  height: 680px;
+  display: flex;
+}
+
+/* Sidebar section */
+.hero-sidebar {
+  width: 155px;
+  padding: 32px 32px 40px 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-social-media {
+  margin-bottom: 40px;
+}
+
+/* Hero container */
+.hero-container {
+  background-color: var(--black-text-color);
+  background-image: url(../images/hero-image-slider.jpg);
+  background-size: cover;
+  color: var(--white-text-color);
+  flex-grow: 1;
+  padding: 40px 55px 40px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-description {
+  color: #9da4bd;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 166.667%;
+  letter-spacing: 0.36px;
+}
+
+.hero-title {
+  font-family: var(--header-font-family);
+  font-size: 72px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 3.6px;
+
+  color: var(--white-text-color);
+}
+
+/* Hero content */
+.hero-content > :nth-child(n + 2) {
+  margin-top: 20px;
+}
+
+.hero-control-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 26px;
+}
+
+.hero-control-button {
+  background: none;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+
+  cursor: pointer;
+}
+
+.hero-control-button-dark {
+  color: var(--gray-color);
+}
+
+.hero-control-button-light {
+  color: var(--white-text-color);
+}
