@@ -36,8 +36,10 @@
     <link rel="stylesheet" href="./css/hero-styles.css" />
     <link rel="stylesheet" href="./css/about-styles.css" />
     <link rel="stylesheet" href="./css/services-and-prices-styles.css" />
-    <link rel="stylesheet" href="./css/our-barbers-style.css" />
-    <link rel="stylesheet" href="./css/contacts-style.css" />
+    <link rel="stylesheet" href="./css/why-us-styles.css" />
+    <link rel="stylesheet" href="./css/our-barbers-styles.css" />
+    <link rel="stylesheet" href="./css/portfolio-styles.css" />
+    <link rel="stylesheet" href="./css/contacts-styles.css" />
     <title>Barbershop</title>
   </head>
   <body>
@@ -312,17 +314,19 @@
               for true connoisseurs of the atmosphere
             </h3>
           </div>
-          <h2 class="header header-dark">Our Barbers</h2>
-          <ul>
-            <li>
+          <h2 class="header header-dark our-barbers-header">Our Barbers</h2>
+          <ul class="our-barbers-list">
+            <li class="our-barbers-list-item">
               <img
                 src="./images/barber-john.jpg"
                 alt="John Smith"
                 width="370"
                 height="346"
               />
-              <h4>John Smith</h4>
-              <p>Extreme Barber</p>
+              <div class="our-barbers-name-description">
+                <h4 class="our-barbers-name">John Smith</h4>
+                <p class="our-barbers-description">Extreme Barber</p>
+              </div>
               <ul class="our-barbers-social-media-list">
                 <li>
                   <a class="our-barbers-social-media-list-icon" href="">
@@ -354,15 +358,17 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="our-barbers-list-item">
               <img
                 src="./images/barber-michel.jpg"
                 alt="Michele Doe"
                 width="370"
                 height="346"
               />
-              <h4>Michele Doe</h4>
-              <p>Extreme Barber</p>
+              <div class="our-barbers-name-description">
+                <h4 class="our-barbers-name">Michele Doe</h4>
+                <p class="our-barbers-description">Extreme Barber</p>
+              </div>
               <ul class="our-barbers-social-media-list">
                 <li>
                   <a class="our-barbers-social-media-list-icon" href="">
@@ -394,15 +400,17 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="our-barbers-list-item">
               <img
                 src="./images/barber-alan.jpg"
                 alt="Alan Black"
                 width="370"
                 height="346"
               />
-              <h4>Alan Black</h4>
-              <p>Extreme Barber</p>
+              <div class="our-barbers-name-description">
+                <h4 class="our-barbers-name">Alan Black</h4>
+                <p class="our-barbers-description">Extreme Barber</p>
+              </div>
               <ul class="our-barbers-social-media-list">
                 <li>
                   <a class="our-barbers-social-media-list-icon" href="">
@@ -444,11 +452,11 @@
             <svg width="60" height="1" class="divider-dark">
               <use href="./images/icons.svg#icon-divider"></use>
             </svg>
-            <h3 class="subtitle subtitle-dark">
+            <p class="subtitle subtitle-dark portfolio-subtitle">
               In Latin, &quot;barba&quot; means &quot;beard&quot;
-            </h3>
+            </p>
           </div>
-          <ul>
+          <ul class="portfolio-list">
             <li>
               <img
                 src="./images/portfolio-img1.jpg"
@@ -486,26 +494,30 @@
 
         <!-- Contacts -->
         <section id="contacts" class="contacts">
-          <h2 class="header header-light">Contacts</h2>
-          <adress>
-            <span class="contacts-address">
+          <h2 class="header header-light contacts-header">Contacts</h2>
+          <adress class="contacts-address">
+            <span class="contacts-address-span">
               <svg width="24" height="24" class="contacts-address-icon">
                 <use href="./images/icons.svg#icon-map-pin"></use>
               </svg>
               Main Street, 7A Kyiv, 08132</span
             >
             <br />
-            <a href="tel:+380441111111">+38 044 111 11 11</a>
-            <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+            <a class="contacts-phone" href="tel:+380441111111"
+              >+38 044 111 11 11</a
+            >
+            <a class="contacts-mail" href="mailto:barbershop@email.com"
+              >barbershop@email.com</a
+            >
           </adress>
-          <div class="subtitle-container">
+          <div class="subtitle-container contacts-subtitle-container">
             <svg width="60" height="1" class="divider-light">
               <use href="./images/icons.svg#icon-divider"></use>
             </svg>
 
-            <h3>working hours</h3>
+            <p>working hours</p>
           </div>
-          <p>
+          <p class="contacts-schedule">
             Daily from <time datetime="9:00AM">9:00 AM</time> till
             <time datetime="22:00PM">22:00 PM</time>
           </p>

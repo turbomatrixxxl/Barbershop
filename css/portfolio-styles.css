@@ -1,0 +1,20 @@
+/* Portfolio section */
+.portfolio {
+  height: 679px;
+  padding: 130px 55px;
+}
+
+.portfolio-subtitle {
+  color: #303030;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.portfolio-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 44px;
+}

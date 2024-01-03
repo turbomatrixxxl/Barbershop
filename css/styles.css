@@ -202,43 +202,6 @@ ul {
   color: var(--black-text-color);
 }
 
-/* Why us section */
-.why-us {
-}
-
-.why-us-card-list {
-  --card-width: 170px;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 30px;
-  max-width: calc(var(--card-width) * 2 + 30px);
-}
-
-.why-us-card-list-item {
-  flex-basis: var(--card-width);
-  height: 133px;
-  background: #f7f7f7;
-}
-
-.why-us-card-list-item-shifted {
-  margin-top: 35px;
-}
-
-/* Our barbers section */
-.our-barbers {
-}
-
-/* Portfolio section */
-.portfolio {
-}
-
-/* Contacts section */
-/* TODO replace image background */
-.contacts {
-  background-color: var(--black-text-color);
-  color: var(--white-text-color);
-}
-
 /* Footer section */
 .footer {
 }
