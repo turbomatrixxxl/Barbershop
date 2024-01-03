@@ -63,6 +63,7 @@
   height: 44px;
   border-radius: 50%;
   background-color: var(--white-text-color);
+  cursor: pointer;
 }
 
 .our-barbers-social-media-list-item-link {
