@@ -56,6 +56,9 @@
 }
 
 .our-barbers-social-media-list-item {
+}
+
+.our-barbers-social-media-list-item-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,9 +67,6 @@
   border-radius: 50%;
   background-color: var(--white-text-color);
   cursor: pointer;
-}
-
-.our-barbers-social-media-list-item-link {
   fill: var(--black-text-color);
 }
 
