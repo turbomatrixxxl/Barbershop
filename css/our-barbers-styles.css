@@ -1,0 +1,64 @@
+.our-barbers {
+  height: 890px;
+  padding: 130px 55px;
+  background: #f7f7f7;
+}
+
+.our-barbers-header {
+  margin-top: 20px;
+  margin-bottom: 44px;
+}
+
+.our-barbers-list {
+  display: flex;
+  gap: 30px;
+}
+
+.our-barbers-list-item-card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-barbers-description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-barbers-description-container-name {
+  color: var(--black-text-color);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+
+.our-barbers-description-container-ability {
+  color: var(--brand-color);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+.our-barbers-social-media-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-barbers-social-media-list-item {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  fill: #fff;
+}

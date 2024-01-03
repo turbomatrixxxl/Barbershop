@@ -1,0 +1,64 @@
+/* Why us section */
+.why-us {
+  height: 582px;
+  display: flex;
+  padding: 121px 155px 130px 155px;
+  gap: 130px;
+}
+
+.why-us-card-list {
+  --card-width: 170px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  max-width: calc(var(--card-width) * 2 + 30px);
+}
+
+.why-us-card-list-item {
+  flex-basis: var(--card-width);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 24px;
+  gap: 6px;
+  height: 133px;
+  background: #f7f7f7;
+}
+
+.why-us-card-list-item-shifted {
+  margin-top: 35px;
+}
+
+.why-us-card-list-item-number {
+  color: var(--black-text-color);
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+}
+
+.why-us-card-list-item-description {
+  /* width: 120px; */
+  color: var(--black-text-color);
+  text-align: center;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.why-us-header {
+  width: 420px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.why-us-description-paragraph {
+  width: 460px;
+  color: var(--content-color);
+  font-size: 18px;
+  font-style: normal;
+  line-height: 166.667%;
+  letter-spacing: 0.36px;
+}

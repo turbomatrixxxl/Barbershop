@@ -1,0 +1,10 @@
+.portfolio {
+  height: 679px;
+  padding: 130px 55px;
+}
+
+.portfolio-images {
+  display: flex;
+  gap: 30px;
+  margin-top: 44px;
+}

@@ -1,0 +1,70 @@
+/* Contacts section */
+.contacts {
+  background-image: url(../images/contacts-bg-img.png);
+  background-color: #191c26;
+
+  color: var(--white-text-color);
+  height: 644px;
+  width: 625px;
+  padding: 130px 105px 130px 100px;
+}
+
+.contacts-header {
+  color: var(--white-text-color);
+  font-size: 42px;
+  letter-spacing: 2.1px;
+}
+
+.contacts-address {
+  --address-items-color: #9da4bd;
+  /* display: block; */
+  margin-top: 40px;
+}
+
+.contacts-address-icon {
+  /* fill: #9da4bd; */
+  stroke: var(--address-items-color);
+  fill-opacity: 0;
+}
+
+.contacts-address-span {
+  color: var(--address-items-color);
+  font-size: 18px;
+  font-style: normal;
+  line-height: 166.667%;
+  letter-spacing: 0.36px;
+}
+
+.contacts-phone {
+  color: var(--address-items-color);
+  font-size: 18px;
+  line-height: 166.667%;
+  letter-spacing: 0.36px;
+}
+
+.contacts-mail {
+  color: var(--address-items-color);
+  font-size: 18px;
+  line-height: 166.667%;
+  letter-spacing: 0.36px;
+}
+
+.contacts-subtitle-container {
+  margin-top: 70px;
+  margin-bottom: 20px;
+
+  color: var(--white-text-color);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.contacts-schedule {
+  color: var(--address-items-color);
+  font-size: 18px;
+  line-height: 166.667%;
+  letter-spacing: 0.36px;
+}
