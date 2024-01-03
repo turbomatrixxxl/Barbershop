@@ -56,9 +56,20 @@
 }
 
 .our-barbers-social-media-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
   border-radius: 50%;
-  fill: #fff;
+  background-color: var(--white-text-color);
+}
+
+.our-barbers-social-media-list-item-link {
+  fill: var(--black-text-color);
+}
+
+.our-barbers-social-media-list-item-link:hover,
+.our-barbers-social-media-list-item-link:active {
+  fill: var(--brand-color);
 }
