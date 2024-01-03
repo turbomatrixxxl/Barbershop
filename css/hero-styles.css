@@ -20,14 +20,36 @@
 /* Hero container */
 .hero-container {
   background-color: var(--black-text-color);
-  background-image: url(../images/hero-image-slider.jpg);
-  background-size: cover;
+  /* background-image: url(../images/hero-image-slider.jpg); */
+  /* background-size: cover; */
   color: var(--white-text-color);
   flex-grow: 1;
+  position: relative;
+}
+
+.hero-carousel {
+  position: absolute;
+  overflow: hidden;
+
+  width: 100%;
+  height: 100%;
+}
+
+.hero-carousel-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-content-container {
+  position: relative;
   padding: 40px 55px 40px 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
+  z-index: 1;
 }
 
 .hero-description {

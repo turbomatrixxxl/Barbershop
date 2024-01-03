@@ -38,6 +38,11 @@
   letter-spacing: 2.1px;
 }
 
+.why-us-card-list-item-number > sup {
+  color: var(--brand-color);
+  width: 13px;
+}
+
 .why-us-card-list-item-description {
   /* width: 120px; */
   color: var(--black-text-color);

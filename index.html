@@ -45,6 +45,9 @@
     <title>Barbershop</title>
   </head>
   <body>
+    <div class="modal is-hidden" data-modal>
+      <button data-modal-close>Close</button>
+    </div>
     <div class="container">
       <!-- Header -->
       <!-- Hero section -->
@@ -88,65 +91,91 @@
 
         <!-- Hero container -->
         <div class="hero-container">
-          <!-- Header -->
-          <header class="header-container">
-            <nav class="hero-navbar">
-              <ul class="hero-navbar-list">
-                <li><a class="nav-link" href="#about">About</a></li>
-                <li>
-                  <a class="nav-link" href="#prices">Services and Prices</a>
-                </li>
-                <li><a class="nav-link" href="#barbers">Barbers</a></li>
-                <li><a class="nav-link" href="#contacts">Contacts</a></li>
-              </ul>
-            </nav>
-            <div class="hero-header-cta">
-              <address class="hero-header-address">
-                <a class="adress-phone-number" href="tel:+380441111111"
-                  >+38 044 111 11 11</a
+          <div class="hero-carousel">
+            <img
+              class="hero-carousel-item"
+              src="./images/hero-image-slider.jpg"
+              alt=""
+              data-carousel-item
+            />
+            <img
+              class="hero-carousel-item"
+              src="./images/hero-image-slider2.jpg"
+              alt=""
+              data-carousel-item
+            />
+            <img
+              class="hero-carousel-item"
+              src="./images/hero-image-slider3.jpg"
+              alt=""
+              data-carousel-item
+            />
+          </div>
+
+          <div class="hero-content-container">
+            <!-- Header -->
+            <header class="header-container">
+              <nav class="hero-navbar">
+                <ul class="hero-navbar-list">
+                  <li><a class="nav-link" href="#about">About</a></li>
+                  <li>
+                    <a class="nav-link" href="#prices">Services and Prices</a>
+                  </li>
+                  <li><a class="nav-link" href="#barbers">Barbers</a></li>
+                  <li><a class="nav-link" href="#contacts">Contacts</a></li>
+                </ul>
+              </nav>
+              <div class="hero-header-cta">
+                <address class="hero-header-address">
+                  <a class="adress-phone-number" href="tel:+380441111111"
+                    >+38 044 111 11 11</a
+                  >
+                </address>
+                <button
+                  class="book-service-button book-service-button-light"
+                  type="button"
+                  data-modal-open
                 >
-              </address>
+                  book a Service
+                </button>
+              </div>
+            </header>
+
+            <!-- Title -->
+            <section class="hero-content">
+              <!-- Subtitle -->
+              <div class="subtitle-container">
+                <svg width="60" height="1" class="divider-light">
+                  <use href="./images/icons.svg#icon-divider"></use>
+                </svg>
+                <p class="subtitle subtitle-light">
+                  A hair salon for men in Kyiv
+                </p>
+              </div>
+              <h1 class="hero-title">BarberShop</h1>
+              <p class="hero-description">
+                We are experts in trendy men's haircuts. <br />
+                We work quickly, carefully, and tastefully.
+              </p>
+            </section>
+
+            <!-- Control buttons -->
+            <div class="hero-control-buttons">
               <button
-                class="book-service-button book-service-button-light"
+                class="hero-control-button hero-control-button-dark"
                 type="button"
+                onclick="onBack()"
               >
-                book a Service
+                Back
+              </button>
+              <button
+                class="hero-control-button hero-control-button-light"
+                type="button"
+                onclick="onNext()"
+              >
+                Next
               </button>
             </div>
-          </header>
-
-          <!-- Title -->
-          <section class="hero-content">
-            <!-- Subtitle -->
-            <div class="subtitle-container">
-              <svg width="60" height="1" class="divider-light">
-                <use href="./images/icons.svg#icon-divider"></use>
-              </svg>
-              <p class="subtitle subtitle-light">
-                A hair salon for men in Kyiv
-              </p>
-            </div>
-            <h1 class="hero-title">BarberShop</h1>
-            <p class="hero-description">
-              We are experts in trendy men's haircuts. <br />
-              We work quickly, carefully, and tastefully.
-            </p>
-          </section>
-
-          <!-- Control buttons -->
-          <div class="hero-control-buttons">
-            <button
-              class="hero-control-button hero-control-button-dark"
-              type="button"
-            >
-              Back
-            </button>
-            <button
-              class="hero-control-button hero-control-button-light"
-              type="button"
-            >
-              Next
-            </button>
           </div>
         </div>
       </section>
@@ -581,5 +610,6 @@
         </div>
       </footer>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
