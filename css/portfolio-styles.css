@@ -3,8 +3,11 @@
   padding: 130px 55px;
 }
 
+.portfolio-subtitle-container {
+  margin-bottom: 44px;
+}
+
 .portfolio-images {
   display: flex;
   gap: 30px;
-  margin-top: 44px;
 }

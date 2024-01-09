@@ -17,6 +17,18 @@
   margin-bottom: 40px;
 }
 
+.hero-social-media-element {
+  transform: rotate(-90deg);
+}
+
+.hero-social-media-element :first-child {
+  margin-bottom: 80px;
+}
+
+.hero-side-bar-divider {
+  transform: rotate(-90deg);
+}
+
 /* Hero container */
 .hero-container {
   background-color: var(--black-text-color);
@@ -40,6 +52,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform, 500ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-content-container {
