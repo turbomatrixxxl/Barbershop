@@ -45,12 +45,14 @@
     <title>Barbershop</title>
   </head>
   <body>
+    <!-- Modal window -->
     <div class="modal is-hidden" data-modal>
       <button data-modal-close>Close</button>
     </div>
+
+    <!-- Body container -->
     <div class="container">
-      <!-- Header -->
-      <!-- Hero section -->
+      <!-- Hero section and Header -->
       <section class="hero">
         <!-- Side section -->
         <div class="hero-sidebar">
@@ -83,7 +85,11 @@
                 >
               </li>
             </ul>
-            <svg width="60" height="1" class="divider-dark">
+            <svg
+              width="60"
+              height="1"
+              class="divider-dark hero-side-bar-divider"
+            >
               <use href="./images/icons.svg#icon-divider"></use>
             </svg>
           </div>
@@ -498,7 +504,7 @@
         <!-- Portfolio section -->
         <section class="portfolio">
           <!-- Subtitle -->
-          <div class="subtitle-container">
+          <div class="subtitle-container portfolio-subtitle-container">
             <svg width="60" height="1" class="divider-dark">
               <use href="./images/icons.svg#icon-divider"></use>
             </svg>
@@ -556,12 +562,19 @@
                 Main Street, 7A Kyiv, 08132</span
               >
               <br />
-              <a class="contacts-phone" href="tel:+380441111111"
-                >+38 044 111 11 11</a
+              <a class="contacts-phone" href="tel:+380441111111">
+                <svg width="24" height="24" class="contacts-address-icon">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                +38 044 111 11 11</a
               >
-              <a class="contacts-mail" href="mailto:barbershop@email.com"
-                >barbershop@email.com</a
-              >
+
+              <a class="contacts-mail" href="mailto:barbershop@email.com">
+                <svg width="24" height="24" class="contacts-address-icon">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                barbershop@email.com
+              </a>
             </address>
             <div class="subtitle-container contacts-subtitle-container">
               <svg width="60" height="1" class="divider-light">
@@ -610,6 +623,6 @@
         </div>
       </footer>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

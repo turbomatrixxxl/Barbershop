@@ -1,11 +1,21 @@
 /* Contacts section */
+.book-service-and-contacts {
+  height: 644px;
+  display: flex;
+  background-color: #191c26;
+}
+
+.book-service-section {
+  width: 55%;
+}
+
 .contacts {
   background-image: url(../images/contacts-bg-img.png);
-  background-color: #191c26;
-
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* flex-grow: 1; */
+  width: 45%;
   color: var(--white-text-color);
-  height: 644px;
-  width: 625px;
   padding: 130px 105px 130px 100px;
 }
 
@@ -25,9 +35,12 @@
   /* fill: #9da4bd; */
   stroke: var(--address-items-color);
   fill-opacity: 0;
+  margin-right: 16px;
 }
 
 .contacts-address-span {
+  display: flex;
+  align-items: center;
   color: var(--address-items-color);
   font-size: 18px;
   font-style: normal;
@@ -36,6 +49,10 @@
 }
 
 .contacts-phone {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
   color: var(--address-items-color);
   font-size: 18px;
   line-height: 166.667%;
@@ -43,6 +60,9 @@
 }
 
 .contacts-mail {
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
   color: var(--address-items-color);
   font-size: 18px;
   line-height: 166.667%;
