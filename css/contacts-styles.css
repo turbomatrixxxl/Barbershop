@@ -1,14 +1,75 @@
-/* Contacts section */
+/* Book service and Contacts section */
 .book-service-and-contacts {
   height: 644px;
   display: flex;
   background-color: #191c26;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+/* Book service section */
 .book-service-section {
   width: 55%;
+  padding: 130px 40px 0 55px;
 }
 
+.book-service-form {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  margin-top: 44px;
+}
+
+.book-service-contact-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.book-service-contact-info-item {
+  flex-grow: 1;
+  border: none;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  background: none;
+  color: white;
+
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.book-service-textarea {
+  resize: none;
+}
+
+.book-service-contact-info-item::placeholder {
+  color: rgba(157, 164, 189, 0.4);
+
+  /* font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-transform: uppercase; */
+}
+
+.book-service-contact-info-item:hover,
+.book-service-contact-info-item:focus {
+  outline: none;
+  border-bottom: 1px solid white;
+}
+
+.book-service-contact-info-item:hover::placeholder,
+.book-service-contact-info-item:focus::placeholder {
+  color: white;
+}
+
+/* Contacts section */
 .contacts {
   background-image: url(../images/contacts-bg-img.png);
   background-repeat: no-repeat;

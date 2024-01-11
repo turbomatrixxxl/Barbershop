@@ -550,7 +550,40 @@
 
         <!-- Book service and Contacts section -->
         <div class="book-service-and-contacts">
-          <section class="book-service-section"></section>
+          <section class="book-service-section">
+            <h2 class="header header-light">Book a Service</h2>
+            <form autocomplete="off" class="book-service-form">
+              <div class="book-service-contact-info">
+                <input
+                  class="book-service-contact-info-item"
+                  type="text"
+                  placeholder="Name*"
+                  required
+                  name="name"
+                />
+                <input
+                  class="book-service-contact-info-item"
+                  type="tel"
+                  placeholder="Telephone*"
+                  required
+                  name="telephone"
+                />
+              </div>
+              <textarea
+                class="book-service-contact-info-item book-service-textarea"
+                name="message"
+                rows="5"
+                placeholder="Message"
+              ></textarea>
+
+              <button
+                class="book-service-button book-service-button-light"
+                type="submit"
+              >
+                send
+              </button>
+            </form>
+          </section>
           <!-- Contacts -->
           <section id="contacts" class="contacts">
             <h2 class="header header-light contacts-header">Contacts</h2>
