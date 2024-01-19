@@ -11,6 +11,9 @@
   /* copiat din google fonts */
   --header-font-family: "Raleway", sans-serif;
   --content-color: #555;
+
+  --padding-horizontal-global: 31px;
+  --padding-vertical-global: 84px;
 }
 
 /* Global styles */
@@ -56,76 +59,8 @@ ul {
 }
 
 .container {
-  width: 1280px;
+  max-width: 1280px;
   margin: auto;
-}
-
-.social-media-link {
-  color: var(--black-text-color);
-  font-size: 11px;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 2.2px;
-}
-
-.social-media-link:hover,
-.social-media-link:focus {
-  color: var(--brand-color);
-}
-
-.hero-social-media-element:first-child {
-  margin-bottom: 40px;
-}
-
-/* Header */
-.header-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* header navbar */
-.hero-navbar {
-  display: flex;
-  align-items: center;
-}
-
-.nav-link {
-  color: var(--white-text-color);
-  font-size: 12px;
-  /* aici nu se sterge font style chiar daca se repeta */
-  /* numai la paragrafe se sterge deoarece se repeta si nu are nici un efect */
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 1.2px;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--brand-color);
-}
-
-.hero-navbar-list {
-  display: flex;
-  gap: 40px;
-}
-
-/* header cta */
-
-.adress-phone-number {
-  color: var(--white-text-color);
-  font-size: 12px;
-  /* nu se sterge font stile pentru ca altfel scrisul ar fi italic si asa devine normal */
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-}
-
-.adress-phone-number:hover,
-.adress-phone-number:focus {
-  color: var(--brand-color);
 }
 
 .book-service-button {
@@ -158,16 +93,6 @@ ul {
 .book-service-button:focus {
   color: var(--white-text-color);
   background-color: var(--brand-color);
-}
-
-.hero-header-cta {
-  display: flex;
-  gap: 40px;
-}
-
-.hero-header-address {
-  display: flex;
-  align-items: center;
 }
 
 /* subtitle */
@@ -204,10 +129,12 @@ ul {
 
 .header {
   font-family: var(--header-font-family);
-  font-size: 42px;
+  /* font-size: 42px; */
+  font-size: 28px;
   font-style: normal;
   line-height: normal;
-  letter-spacing: 2.1px;
+  /* letter-spacing: 2.1px; */
+  letter-spacing: 1.4px;
 }
 
 .header-light {
@@ -218,6 +145,21 @@ ul {
   color: var(--black-text-color);
 }
 
-.book-service-and-contacts {
-  display: flex;
+@media screen and (width >= 768px) {
+  :root {
+    --padding-horizontal-global: 39px;
+    --padding-vertical-global: 100px;
+  }
+}
+
+@media screen and (width >= 1158px) {
+  :root {
+    --padding-horizontal-global: 55px;
+    --padding-vertical-global: 130px;
+  }
+
+  .header {
+    font-size: 42px;
+    letter-spacing: 2.1px;
+  }
 }

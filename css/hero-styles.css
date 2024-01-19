@@ -1,17 +1,22 @@
 /* HERO SECTION */
 .hero {
-  height: 680px;
-  display: flex;
+  /* height: 680px; */
+  /* display: flex; */
 }
 
 /* Sidebar section */
 .hero-sidebar {
-  width: 155px;
+  /* width: 155px; */
   padding: 32px 32px 40px 55px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  /* display: flex; */
+  display: none;
+  /* flex-direction: column;
+  justify-content: space-between; */
 }
+
+/* .hero-social-media-container {
+  display: none;
+} */
 
 .hero-social-media {
   margin-bottom: 40px;
@@ -27,6 +32,23 @@
 
 .hero-side-bar-divider {
   transform: rotate(-90deg);
+}
+
+.social-media-link {
+  color: var(--black-text-color);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.2px;
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+  color: var(--brand-color);
+}
+
+.hero-social-media-element:first-child {
+  margin-bottom: 40px;
 }
 
 /* Hero container */
@@ -57,7 +79,7 @@
 
 .hero-content-container {
   position: relative;
-  padding: 40px 55px 40px 100px;
+  /* padding: 40px 55px 40px 100px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -65,27 +87,98 @@
   z-index: 1;
 }
 
-.hero-description {
-  color: #9da4bd;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 166.667%;
-  letter-spacing: 0.36px;
+/* Header */
+.header-container {
+  /* display: flex; */
+  display: none;
+  justify-content: space-between;
 }
 
-.hero-title {
-  font-family: var(--header-font-family);
-  font-size: 72px;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 3.6px;
+/* header navbar */
+.hero-navbar {
+  display: flex;
+  align-items: center;
+}
 
+.hero-navbar-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link {
   color: var(--white-text-color);
+  font-size: 12px;
+  /* aici nu se sterge font style chiar daca se repeta */
+  /* numai la paragrafe se sterge deoarece se repeta si nu are nici un efect */
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--brand-color);
+}
+
+/* header cta */
+
+.hero-header-cta {
+  display: flex;
+  gap: 40px;
+}
+
+.hero-header-address {
+  display: flex;
+  align-items: center;
+}
+
+.address-phone-number {
+  color: var(--white-text-color);
+  font-size: 12px;
+  /* nu se sterge font stile pentru ca altfel scrisul ar fi italic si asa devine normal */
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.address-phone-number:hover,
+.address-phone-number:focus {
+  color: var(--brand-color);
 }
 
 /* Hero content */
 .hero-content > :nth-child(n + 2) {
   margin-top: 20px;
+}
+
+.hero-title {
+  font-family: var(--header-font-family);
+  /* font-size: 72px; */
+  font-size: 48px;
+  font-style: normal;
+  line-height: normal;
+  /* letter-spacing: 3.6px; */
+  letter-spacing: 2.4px;
+
+  color: var(--white-text-color);
+}
+
+.hero-description {
+  /* color: #9da4bd;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 166.667%;
+  letter-spacing: 0.36px; */
+
+  color: #9da4bd;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 162.5%;
+  letter-spacing: 0.32px;
 }
 
 .hero-control-buttons {
@@ -111,4 +204,46 @@
 
 .hero-control-button-light {
   color: var(--white-text-color);
+}
+
+@media screen and (width >= 768px) {
+}
+
+@media screen and (width >= 1158px) {
+  .hero {
+    height: 680px;
+    display: flex;
+  }
+
+  /* Sidebar section */
+  .hero-sidebar {
+    width: 155px;
+    padding: 32px 32px 40px 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .hero-content-container {
+    padding: 40px 55px 40px 100px;
+  }
+
+  /* Header */
+  .header-container {
+    display: flex;
+  }
+
+  .hero-title {
+    font-family: var(--header-font-family);
+    font-size: 72px;
+    letter-spacing: 3.6px;
+
+    color: var(--white-text-color);
+  }
+
+  .hero-description {
+    font-size: 18px;
+    line-height: 166.667%;
+    letter-spacing: 0.36px;
+  }
 }

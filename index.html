@@ -64,7 +64,7 @@
           </a>
 
           <!-- Social media links -->
-          <div>
+          <div class="hero-social-media-container">
             <ul class="hero-social-media">
               <li class="hero-social-media-element">
                 <a
@@ -133,7 +133,7 @@
               </nav>
               <div class="hero-header-cta">
                 <address class="hero-header-address">
-                  <a class="adress-phone-number" href="tel:+380441111111"
+                  <a class="address-phone-number" href="tel:+380441111111"
                     >+38 044 111 11 11</a
                   >
                 </address>
@@ -191,18 +191,18 @@
         <!-- About section -->
         <section id="about" class="about">
           <!-- About images -->
-          <img
-            src="./images/about-img1.jpg"
-            alt="Barber trims beard"
-            width="270"
-            height="445"
-          />
-          <img
-            src="./images/about-img2.jpg"
-            alt="Barber cuts hair"
-            width="270"
-            height="445"
-          />
+          <div class="about-images-container">
+            <img
+              src="./images/about-img1.jpg"
+              alt="Barber trims beard"
+              class="about-image"
+            />
+            <img
+              src="./images/about-img2.jpg"
+              alt="Barber cuts hair"
+              class="about-image"
+            />
+          </div>
 
           <!-- About content -->
           <div class="about-content">
@@ -551,7 +551,7 @@
         <!-- Book service and Contacts section -->
         <div class="book-service-and-contacts">
           <section class="book-service-section">
-            <h2 class="header header-light">Book a Service</h2>
+            <h2 class="header header-light contacts-header">Book a Service</h2>
             <form autocomplete="off" class="book-service-form">
               <div class="book-service-contact-info">
                 <input
@@ -577,7 +577,7 @@
               ></textarea>
 
               <button
-                class="book-service-button book-service-button-light"
+                class="book-service-button book-service-button-light form-submit-button"
                 type="submit"
               >
                 send
@@ -587,39 +587,41 @@
           <!-- Contacts -->
           <section id="contacts" class="contacts">
             <h2 class="header header-light contacts-header">Contacts</h2>
-            <address class="contacts-address">
-              <span class="contacts-address-span">
-                <svg width="24" height="24" class="contacts-address-icon">
-                  <use href="./images/icons.svg#icon-map-pin"></use>
-                </svg>
-                Main Street, 7A Kyiv, 08132</span
-              >
-              <br />
-              <a class="contacts-phone" href="tel:+380441111111">
-                <svg width="24" height="24" class="contacts-address-icon">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-                +38 044 111 11 11</a
-              >
-
-              <a class="contacts-mail" href="mailto:barbershop@email.com">
-                <svg width="24" height="24" class="contacts-address-icon">
-                  <use href="./images/icons.svg#icon-mail"></use>
-                </svg>
-                barbershop@email.com
-              </a>
-            </address>
-            <div class="subtitle-container contacts-subtitle-container">
-              <svg width="60" height="1" class="divider-light">
-                <use href="./images/icons.svg#icon-divider"></use>
-              </svg>
-
-              <p>working hours</p>
+            <div class="contacts-information-container">
+              <address class="contacts-address">
+                <span class="contacts-address-span">
+                  <svg width="24" height="24" class="contacts-address-icon">
+                    <use href="./images/icons.svg#icon-map-pin"></use>
+                  </svg>
+                  Main Street, 7A Kyiv, 08132</span
+                >
+                <br />
+                <a class="contacts-phone" href="tel:+380441111111">
+                  <svg width="24" height="24" class="contacts-address-icon">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                  +38 044 111 11 11</a
+                >
+                <a class="contacts-mail" href="mailto:barbershop@email.com">
+                  <svg width="24" height="24" class="contacts-address-icon">
+                    <use href="./images/icons.svg#icon-mail"></use>
+                  </svg>
+                  barbershop@email.com
+                </a>
+              </address>
+              <div class="contacts-working-hours-container">
+                <div class="subtitle-container contacts-subtitle-container">
+                  <svg width="60" height="1" class="divider-light">
+                    <use href="./images/icons.svg#icon-divider"></use>
+                  </svg>
+                  <p>working hours</p>
+                </div>
+                <p class="contacts-schedule">
+                  Daily from <time datetime="09:00">9:00 AM</time> till
+                  <time datetime="22:00">22:00 PM</time>
+                </p>
+              </div>
             </div>
-            <p class="contacts-schedule">
-              Daily from <time datetime="09:00">9:00 AM</time> till
-              <time datetime="22:00">22:00 PM</time>
-            </p>
           </section>
         </div>
       </main>
@@ -627,7 +629,7 @@
       <!-- Footer -->
       <footer class="footer">
         <p class="footer-trade-mark">&copy;Copyright 2022</p>
-        <div class="subtitle-container">
+        <div class="footer-subtitle-container">
           <svg width="60" height="1" class="divider-dark">
             <use href="./images/icons.svg#icon-divider"></use>
           </svg>

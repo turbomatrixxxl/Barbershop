@@ -1,7 +1,7 @@
 /* Book service and Contacts section */
 .book-service-and-contacts {
-  height: 644px;
-  display: flex;
+  /* height: 644px; */
+  /* display: flex; */
   background-color: #191c26;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,8 +9,9 @@
 
 /* Book service section */
 .book-service-section {
-  width: 55%;
-  padding: 130px 40px 0 55px;
+  /* width: 55%; */
+  /* padding: 130px 40px 0 55px; */
+  padding: var(--padding-vertical-global) var(--padding-horizontal-global);
 }
 
 .book-service-form {
@@ -22,8 +23,11 @@
 
 .book-service-contact-info {
   display: flex;
-  justify-content: space-between;
-  gap: 30px;
+  flex-direction: column;
+
+  /* justify-content: space-between; */
+  /* gap: 30px; */
+  gap: 44px;
 }
 
 .book-service-contact-info-item {
@@ -45,6 +49,10 @@
 
 .book-service-textarea {
   resize: none;
+}
+
+.form-submit-button {
+  margin: 0 auto;
 }
 
 .book-service-contact-info-item::placeholder {
@@ -75,21 +83,21 @@
   background-repeat: no-repeat;
   background-size: cover;
   /* flex-grow: 1; */
-  width: 45%;
+  /* width: 45%; */
   color: var(--white-text-color);
-  padding: 130px 105px 130px 100px;
+  /* padding: 130px 105px 130px 100px; */
+  padding: var(--padding-vertical-global) var(--padding-horizontal-global);
 }
 
 .contacts-header {
-  color: var(--white-text-color);
-  font-size: 42px;
-  letter-spacing: 2.1px;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .contacts-address {
   --address-items-color: #9da4bd;
   /* display: block; */
-  margin-top: 40px;
+  width: 290px;
 }
 
 .contacts-address-icon {
@@ -131,7 +139,6 @@
 }
 
 .contacts-subtitle-container {
-  margin-top: 70px;
   margin-bottom: 20px;
 
   color: var(--white-text-color);
@@ -148,4 +155,60 @@
   font-size: 18px;
   line-height: 166.667%;
   letter-spacing: 0.36px;
+}
+
+@media screen and (width >= 768px) {
+  .book-service-contact-info {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .form-submit-button {
+    margin: 0;
+  }
+
+  .contacts-header {
+    margin-left: 0;
+  }
+
+  .contacts-working-hours-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contacts-information-container {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  margin-top: 40px;
+}
+
+@media screen and (width >= 768px) {
+  .contacts-information-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (width >= 1158px) {
+  .book-service-section {
+    flex-basis: 55%;
+  }
+
+  .contacts {
+    flex-basis: 45%;
+  }
+
+  .book-service-and-contacts {
+    display: flex;
+  }
+
+  .contacts-information-container {
+    flex-direction: column;
+    gap: 70px;
+  }
 }

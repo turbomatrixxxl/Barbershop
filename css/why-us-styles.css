@@ -1,9 +1,13 @@
 /* Why us section */
 .why-us {
-  height: 582px;
+  /* height: 582px; */
   display: flex;
-  padding: 121px 155px 130px 155px;
-  gap: 130px;
+  flex-direction: column-reverse;
+
+  /* padding: 121px 155px 130px 155px; */
+  padding: var(--padding-vertical-global) var(--padding-horizontal-global);
+  /* gap: 130px; */
+  gap: 44px;
 }
 
 .why-us-card-list {
@@ -12,6 +16,7 @@
   flex-wrap: wrap;
   column-gap: 30px;
   max-width: calc(var(--card-width) * 2 + 30px);
+  margin-left: auto;
 }
 
 .why-us-card-list-item {
@@ -30,6 +35,9 @@
 }
 
 .why-us-card-list-item-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--black-text-color);
   text-align: center;
   font-size: 42px;
@@ -38,9 +46,15 @@
   letter-spacing: 2.1px;
 }
 
-.why-us-card-list-item-number > sup {
+sup {
   color: var(--brand-color);
   width: 13px;
+  font-size: 16px;
+
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .why-us-card-list-item-description {
@@ -53,6 +67,13 @@
   line-height: normal;
 }
 
+.why-us-description-container {
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .why-us-header {
   width: 420px;
   margin-top: 20px;
@@ -60,10 +81,26 @@
 }
 
 .why-us-description-paragraph {
-  width: 460px;
+  /* width: 460px; */
   color: var(--content-color);
   font-size: 18px;
   font-style: normal;
   line-height: 166.667%;
   letter-spacing: 0.36px;
+}
+
+@media screen and (width >= 1158px) {
+  .why-us {
+    /* height: 582px; */
+    display: flex;
+    flex-direction: row;
+
+    /* padding: 121px 155px 130px 155px; */
+    padding: var(--padding-vertical-global) var(--padding-horizontal-global);
+    gap: 130px;
+  }
+
+  .why-us-card-list {
+    margin: 0 auto;
+  }
 }
