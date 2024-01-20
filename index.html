@@ -374,10 +374,12 @@
           <ul class="our-barbers-list">
             <li class="our-barbers-list-item-card">
               <img
+                srcset="
+                  ./images/barber-john.jpg    1x,
+                  ./images/barber-john@2x.jpg 2x
+                "
                 src="./images/barber-john.jpg"
                 alt="John Smith"
-                width="370"
-                height="346"
               />
               <div class="our-barbers-description-container">
                 <p class="our-barbers-description-container-name">John Smith</p>
@@ -418,10 +420,12 @@
             </li>
             <li class="our-barbers-list-item-card">
               <img
+                srcset="
+                  ./images/barber-michel.jpg    1x,
+                  ./images/barber-michel@2x.jpg 2x
+                "
                 src="./images/barber-michel.jpg"
                 alt="Michele Doe"
-                width="370"
-                height="346"
               />
               <div class="our-barbers-description-container">
                 <p class="our-barbers-description-container-name">
@@ -464,10 +468,12 @@
             </li>
             <li class="our-barbers-list-item-card">
               <img
+                srcset="
+                  ./images/barber-alan.jpg    1x,
+                  ./images/barber-alan@2x.jpg 2x
+                "
                 src="./images/barber-alan.jpg"
                 alt="Alan Black"
-                width="370"
-                height="346"
               />
               <div class="our-barbers-description-container">
                 <p class="our-barbers-description-container-name">Alan Black</p>
@@ -520,40 +526,60 @@
               In Latin, &quot;barba&quot; means &quot;beard&quot;
             </p>
           </div>
-          <ul class="portfolio-images">
-            <li>
-              <img
-                src="./images/portfolio-img1.jpg"
-                alt="Women cuts hair with trimmer"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/portfolio-img2.jpg"
-                alt="Barber cuts beard"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/portfolio-img3.jpg"
-                alt="Barber use  towell on face"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/portfolio-img4.jpg"
-                alt="Barber shave hair of the neck"
-                width="270"
-                height="360"
-              />
-            </li>
-          </ul>
+          <div class="portfolio-images-container">
+            <ul class="portfolio-images">
+              <li>
+                <img
+                  srcset="
+                    ./images/portfolio-img1.jpg    1x,
+                    ./images/portfolio-img1@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img1.jpg"
+                  alt="Women cuts hair with trimmer"
+                  width="418px"
+                  height="360px"
+                />
+              </li>
+              <li>
+                <img
+                  srcset="
+                    ./images/portfolio-img2.jpg    1x,
+                    ./images/portfolio-img2@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img2.jpg"
+                  alt="Barber cuts beard"
+                  width="418px"
+                  height="360px"
+                />
+              </li>
+            </ul>
+            <ul class="portfolio-images portfolio-images-second">
+              <li>
+                <img
+                  srcset="
+                    ./images/portfolio-img3.jpg    1x,
+                    ./images/portfolio-img3@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img3.jpg"
+                  alt="Barber use  towell on face"
+                  width="418px"
+                  height="360px"
+                />
+              </li>
+              <li>
+                <img
+                  srcset="
+                    ./images/portfolio-img4.jpg    1x,
+                    ./images/portfolio-img4@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img4.jpg"
+                  alt="Barber shave hair of the neck"
+                  width="418px"
+                  height="360px"
+                />
+              </li>
+            </ul>
+          </div>
         </section>
 
         <!-- Book service and Contacts section -->

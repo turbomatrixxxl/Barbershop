@@ -71,9 +71,7 @@
   }
 
   .about-image {
-    display: block;
     width: 270px;
     height: 445px;
-    object-fit: cover;
   }
 }

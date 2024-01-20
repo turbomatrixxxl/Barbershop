@@ -81,6 +81,13 @@
   fill: var(--brand-color);
 }
 
+.our-barbers-list-item-card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 @media screen and (width >= 1158px) {
   .our-barbers-list {
     flex-direction: row;

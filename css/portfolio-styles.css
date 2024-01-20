@@ -14,11 +14,38 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
-  flex-wrap: wrap;
+}
+
+.portfolio-images-second {
+  margin-top: 30px;
+}
+
+.portfolio-images > li > img {
+  display: block;
+  max-width: 100%;
+  /* height: auto; */
+  object-fit: cover;
+}
+
+@media screen and (width >= 768px) {
+  .portfolio-images-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .portfolio-images-second {
+    margin-top: 0;
+  }
 }
 
 @media screen and (width >= 1158px) {
   .portfolio-images {
     flex-direction: row;
+  }
+
+  .portfolio-images-container {
+    justify-content: center;
+    gap: 30px;
   }
 }
