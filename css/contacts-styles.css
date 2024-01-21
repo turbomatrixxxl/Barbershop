@@ -79,7 +79,11 @@
 
 /* Contacts section */
 .contacts {
-  background-image: url(../images/contacts-bg-img.png);
+  background-image: linear-gradient(
+      rgba(17, 19, 25, 0.9),
+      rgba(17, 19, 25, 0.9)
+    ),
+    url(../images/contacts-bg-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   /* flex-grow: 1; */
@@ -210,5 +214,17 @@
   .contacts-information-container {
     flex-direction: column;
     gap: 70px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .contacts {
+    background-image: linear-gradient(
+        rgba(17, 19, 25, 0.9),
+        rgba(17, 19, 25, 0.9)
+      ),
+      url(../images/contacts-bg-img@2x.jpg);
   }
 }

@@ -57,7 +57,7 @@
         <!-- Side section -->
         <div class="hero-sidebar">
           <!-- Logo -->
-          <a href="">
+          <a href="./index.html">
             <svg width="69" height="56" class="hero-logo">
               <use href="./images/icons.svg#icon-logo"></use>
             </svg>
@@ -121,29 +121,88 @@
           <div class="hero-content-container">
             <!-- Header -->
             <header class="header-container">
-              <nav class="hero-navbar">
-                <ul class="hero-navbar-list">
-                  <li><a class="nav-link" href="#about">About</a></li>
-                  <li>
-                    <a class="nav-link" href="#prices">Services and Prices</a>
-                  </li>
-                  <li><a class="nav-link" href="#barbers">Barbers</a></li>
-                  <li><a class="nav-link" href="#contacts">Contacts</a></li>
-                </ul>
-              </nav>
-              <div class="hero-header-cta">
-                <address class="hero-header-address">
-                  <a class="address-phone-number" href="tel:+380441111111"
-                    >+38 044 111 11 11</a
-                  >
-                </address>
+              <div class="logo-hamburger-menu-container">
+                <!-- Logo -->
+                <a href="./index.html" class="hero-mobile-logo">
+                  <svg width="69" height="56" class="hero-logo">
+                    <use href="./images/icons.svg#icon-logo"></use>
+                  </svg>
+                </a>
+                <!-- Hamburger button -->
                 <button
-                  class="book-service-button book-service-button-light"
+                  class="hero-navbar-menu-button hero-navbar-menu-button-light"
                   type="button"
-                  data-modal-open
+                  data-menu-open
                 >
-                  book a Service
+                  <svg width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                  </svg>
                 </button>
+              </div>
+
+              <div class="hero-navbar-menu" data-menu>
+                <nav class="hero-navbar">
+                  <!-- Hero navbar close button -->
+                  <button
+                    class="hero-navbar-menu-button"
+                    type="button"
+                    data-menu-close
+                  >
+                    <svg width="24" height="24">
+                      <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                  </button>
+                  <ul class="hero-navbar-list">
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li>
+                      <a class="nav-link" href="#prices">Services and Prices</a>
+                    </li>
+                    <li><a class="nav-link" href="#barbers">Barbers</a></li>
+                    <li><a class="nav-link" href="#contacts">Contacts</a></li>
+                  </ul>
+                </nav>
+                <div class="hero-header-cta">
+                  <address class="hero-header-address">
+                    <a class="address-phone-number" href="tel:+380441111111"
+                      >+38 044 111 11 11</a
+                    >
+                  </address>
+                  <button
+                    class="book-service-button book-service-button-dark hero-book-service-button"
+                    type="button"
+                    data-modal-open
+                  >
+                    book a Service
+                  </button>
+                </div>
+                <!-- Social media links -->
+                <div
+                  class="hero-social-media-container hero-menu-social-media-container"
+                >
+                  <svg width="60" height="1" class="divider-dark">
+                    <use href="./images/icons.svg#icon-divider"></use>
+                  </svg>
+                  <ul class="hero-social-media hero-menu-social-media">
+                    <li>
+                      <a
+                        class="social-media-link"
+                        href="https://youtube.com"
+                        target="_blank"
+                        rel="noopener"
+                        >Youtube</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="social-media-link"
+                        href="https://Instagram.com"
+                        target="_blank"
+                        rel="noopener"
+                        >Instagram</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
             </header>
 
@@ -193,12 +252,20 @@
           <!-- About images -->
           <div class="about-images-container">
             <img
-              src="./images/about-img1.jpg"
+              srcset="
+                ./images/about-image-1.jpg    1x,
+                ./images/about-image-1@2x.jpg 2x
+              "
+              src="./images/about-img-1.jpg"
               alt="Barber trims beard"
               class="about-image"
             />
             <img
-              src="./images/about-img2.jpg"
+              srcset="
+                ./images/about-image-2.jpg    1x,
+                ./images/about-image-2@2x.jpg 2x
+              "
+              src="./images/about-img-2.jpg"
               alt="Barber cuts hair"
               class="about-image"
             />
@@ -366,10 +433,12 @@
           <ul class="our-barbers-list">
             <li class="our-barbers-list-item-card">
               <img
+                srcset="
+                  ./images/barber-john.jpg    1x,
+                  ./images/barber-john@2x.jpg 2x
+                "
                 src="./images/barber-john.jpg"
                 alt="John Smith"
-                width="370"
-                height="346"
               />
               <div class="our-barbers-description-container">
                 <p class="our-barbers-description-container-name">John Smith</p>
@@ -410,10 +479,12 @@
             </li>
             <li class="our-barbers-list-item-card">
               <img
+                srcset="
+                  ./images/barber-michel.jpg    1x,
+                  ./images/barber-michel@2x.jpg 2x
+                "
                 src="./images/barber-michel.jpg"
                 alt="Michele Doe"
-                width="370"
-                height="346"
               />
               <div class="our-barbers-description-container">
                 <p class="our-barbers-description-container-name">
@@ -456,10 +527,12 @@
             </li>
             <li class="our-barbers-list-item-card">
               <img
+                srcset="
+                  ./images/barber-alan.jpg    1x,
+                  ./images/barber-alan@2x.jpg 2x
+                "
                 src="./images/barber-alan.jpg"
                 alt="Alan Black"
-                width="370"
-                height="346"
               />
               <div class="our-barbers-description-container">
                 <p class="our-barbers-description-container-name">Alan Black</p>
@@ -512,40 +585,60 @@
               In Latin, &quot;barba&quot; means &quot;beard&quot;
             </p>
           </div>
-          <ul class="portfolio-images">
-            <li>
-              <img
-                src="./images/portfolio-img1.jpg"
-                alt="Women cuts hair with trimmer"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/portfolio-img2.jpg"
-                alt="Barber cuts beard"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/portfolio-img3.jpg"
-                alt="Barber use  towell on face"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/portfolio-img4.jpg"
-                alt="Barber shave hair of the neck"
-                width="270"
-                height="360"
-              />
-            </li>
-          </ul>
+          <div class="portfolio-images-container">
+            <ul class="portfolio-images">
+              <li>
+                <img
+                  srcset="
+                    ./images/portfolio-img1.jpg    1x,
+                    ./images/portfolio-img1@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img1.jpg"
+                  alt="Women cuts hair with trimmer"
+                  width="418px"
+                  height="360px"
+                />
+              </li>
+              <li>
+                <img
+                  srcset="
+                    ./images/portfolio-img2.jpg    1x,
+                    ./images/portfolio-img2@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img2.jpg"
+                  alt="Barber cuts beard"
+                  width="418px"
+                  height="360px"
+                />
+              </li>
+            </ul>
+            <ul class="portfolio-images portfolio-images-second">
+              <li>
+                <img
+                  srcset="
+                    ./images/portfolio-img3.jpg    1x,
+                    ./images/portfolio-img3@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img3.jpg"
+                  alt="Barber use  towell on face"
+                  width="418px"
+                  height="360px"
+                />
+              </li>
+              <li>
+                <img
+                  srcset="
+                    ./images/portfolio-img4.jpg    1x,
+                    ./images/portfolio-img4@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img4.jpg"
+                  alt="Barber shave hair of the neck"
+                  width="418px"
+                  height="360px"
+                />
+              </li>
+            </ul>
+          </div>
         </section>
 
         <!-- Book service and Contacts section -->

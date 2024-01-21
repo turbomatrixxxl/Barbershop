@@ -30,10 +30,6 @@
   background: #f7f7f7;
 }
 
-.why-us-card-list-item-shifted {
-  margin-top: 35px;
-}
-
 .why-us-card-list-item-number {
   display: flex;
   justify-content: center;
@@ -75,7 +71,6 @@ sup {
 }
 
 .why-us-header {
-  width: 420px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -87,6 +82,12 @@ sup {
   font-style: normal;
   line-height: 166.667%;
   letter-spacing: 0.36px;
+}
+
+@media screen and (width >= 768px) {
+  .why-us-card-list-item-shifted {
+    margin-top: 35px;
+  }
 }
 
 @media screen and (width >= 1158px) {

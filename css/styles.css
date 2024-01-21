@@ -45,6 +45,13 @@ ul {
   padding: 0;
 }
 
+/* setare necesara pentru imagini adaptive */
+/* img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} */
+
 /* Classes */
 .modal {
   height: 100vh;
