@@ -72,7 +72,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform, 500ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform, 500ms, ease-in-out;
 }
 
 .hero-content-container {
@@ -227,7 +227,7 @@
   margin-top: 64px;
 }
 
-hero-navbar-menu-button .hero-header-address {
+.hero-navbar-menu-button .hero-header-address {
   display: flex;
   align-items: center;
 }
@@ -380,3 +380,8 @@ hero-navbar-menu-button .hero-header-address {
     letter-spacing: 0.36px;
   }
 }
+
+/* @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+} */
